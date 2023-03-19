@@ -1,14 +1,14 @@
 <h1>Audio Filtering Using IIR Notch Filter</h1>
 The 2nd order IIR notch filter is able to filter tonal noise out of a audio file using transfer function (1). However, this filter leaves some audible residual noise in the output audio file due to narrow attenuation to to 500 Hz (the noise frequency). Thus, to more effectively filter the audio signal, the notch must include nearby frequencies as well. <br/>
 
-<img src='Figures/2nd.PNG' ><br/>
+<img src='Figures/2nd.png' ><br/>
 
 This can be achieved by utilizing filters of higher order. In this section, I was able to derive a 4th order notch filter that can achieve better filtering (in other words, a more rounded notch). The main idea is to have poles and zeros of greater multiplicities at the frequency we want to remove (500 Hz). Thus, in this case, we would square both the numerator (zeros) and denominator (poles) as seen in transfer function (2). <br/>
 
-<img src='Figures/4th.PNG' ><br/>
+<img src='Figures/4th.png' ><br/>
 
 Expanded out, this becomes (3), which I implent as coefficients in MATLAB.<br/>
-<img src='Figures/4th_2.PNG' ><br/>
+<img src='Figures/4th_2.png' ><br/>
 
 <h2>Results</h2>
 <div>
