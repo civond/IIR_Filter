@@ -14,10 +14,10 @@ Expanded out, this becomes (3), which I implent as coefficients in MATLAB.<br/>
 <div>
     I was able to achieve better audio filtering with this 4th order filter. If you wish to listen to the difference, refer to the files in 'Audio/'.
 </div>
-<img src='Figures/Output.jpg' width='400px'>
+<img src='Figures/Output.jpg' width='500px'>
 <div>
     The 4th order IIR filter does a much better job of removing the tonal noise originally present, while the 2nd order IIR filter was able to only reduce it greatly. In other words, the 500 Hz noise is made inaudible using the 4th order filter. This is most clearly seen using a zoomed-in view of the output waveforms (below). 
 
-<img src='Figures/IIR.jpg' width='400px'><br/>
+<img src='Figures/IIR.jpg' width='500px'><br/>
 The pole-zero diagram is as expected, there are poles and zeros of multiplicity 2 each.
-<img src='Figures/PoleZero.jpg' width='400px'>
+<img src='Figures/PoleZero.jpg' width='500px'>
