@@ -1,5 +1,3 @@
-%% DSP Hw5 Part D
-
 clear all;
 
 [s, Fs] = audioread('clean.wav');     % speech signal
